@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "url": "https://www.accellera.org/images/downloads/standards/uvm/uvm_users_guide_1.2.pdf",
+      "retrieved": "2026-10-30",
+      "sha256": "6cddf735c3f7f700ef5f62b2954a28f7fb7e590a149314cbe5b0d342f99d131c",
+      "bytes": 2304614
+    },
+    {
+      "url": "https://www.accellera.org/images/downloads/standards/uvm/UVM_Class_Reference_Manual_1.2.pdf",
+      "retrieved": "2026-10-30",
+      "sha256": "87117e30e17701a13434f785687d3776e710e13c74475b6ada4e7823244ea87a",
+      "bytes": 4732163
+    },
+    {
+      "url": "https://www.accellera.org/images/downloads/standards/uvm/1800.2-2020.3.2%20Release.gz",
+      "retrieved": "2026-10-30",
+      "sha256": "4664ac015f23c72106dd785906aa874d70932ea63f74b85de1e32fa5339c15eb",
+      "bytes": 754457
+    }
+  ],
+  "reference_implementation": "1800.2-2020.3.2",
+  "note": "Actual project version takes precedence; main branch is mutable.",
+  "provenance": "Inherited from the supplied enhanced bundle; archives were not downloaded or rehashed during public-repository preparation."
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "8C7B214FA4C5",
+    "filename": "15149582.pdf",
+    "sha256": "8C7B214FA4C5B54AC018ED2952BA1BCD1B335B391E828583AD6819635336D3B6",
+    "pages": 242
+  },
+  {
+    "id": "32D26BC0C125",
+    "filename": "海思ASIC工程师手册.pdf",
+    "sha256": "32D26BC0C125997F97DEB655311423FDB7B066649544C6AA4BA7F431F23578D5",
+    "pages": 693
+  },
+  {
+    "id": "F2028F252B16",
+    "filename": "数字IC工作学习资料整理.pdf",
+    "sha256": "F2028F252B169CEE8FBF0F1106A105F03DA396A686B4A6E2845A55E9CA9E4128",
+    "pages": 1228
+  },
+  {
+    "id": "AA36994DEA46",
+    "filename": "SystemVerilog数字系统设计.pdf",
+    "sha256": "AA36994DEA4608B920699D3E4FD15D4461CAF4DA3C795436CF71FB4BDA0E4C44",
+    "pages": 280
+  },
+  {
+    "id": "021D3DF54218",
+    "filename": "SYSTEMVERILOG验证  测试平台编写指南（原书第3版）_9787030727466  15214918.pdf",
+    "sha256": "021D3DF54218A9C1E74B42FCB6D2BA1A30A3D1A0969826DB573DA5B5F816E282",
+    "pages": 434
+  },
+  {
+    "id": "95E0B907BC4E",
+    "filename": "Verilog编程艺术_13470839.pdf",
+    "sha256": "95E0B907BC4E987980F445A1FFDBC71E0B0BE43FAFEB06D0C5423F9E880E6B20",
+    "pages": 458
+  },
+  {
+    "id": "B5A644868EDB",
+    "filename": "Verilog高级数字系统设计技术与实例分析_14381536.pdf",
+    "sha256": "B5A644868EDBBCAE956740532EFEA94C4CCC6B8E76F2DC9A6415788955665BC2",
+    "pages": 413
+  },
+  {
+    "id": "DE00E92C16EE",
+    "filename": "华为_Verilog HDL电路设计指导书.pdf",
+    "sha256": "DE00E92C16EE541639D28749817BD29318EB1259CAA6278DAAF7C4EEF80D94CA",
+    "pages": 44
+  },
+  {
+    "id": "614E938421B6",
+    "filename": "华为-硬件工程师.pdf",
+    "sha256": "614E938421B63E978CB5829DCAF50BA37D153F35C200B12CC0EB66BC43E53946",
+    "pages": 73
+  },
+  {
+    "id": "B12514598D5D",
+    "filename": "华为内部培训资料linux 基础.pdf",
+    "sha256": "B12514598D5D630392413A413CF9CFFA4A0A2F90C10B93947DE161EF6A713D1A",
+    "pages": 53
+  },
+  {
+    "id": "78ACBAA29935",
+    "filename": "华为同步电路设计规范.pdf",
+    "sha256": "78ACBAA299359B73CEAE2BAC03CC6771F86A8A3700C32C443144275A6D7ECE9B",
+    "pages": 27
+  },
+  {
+    "id": "3970CAFB8EB2",
+    "filename": "静态时序分析与逻辑设计.pdf",
+    "sha256": "3970CAFB8EB232FDCCF4A94BF108DA8A1C37F3BAC709160641D15BEB1C185F50",
+    "pages": 63
+  },
+  {
+    "id": "480A6844F645",
+    "filename": "IPD教材 201104.pdf",
+    "sha256": "480A6844F645A47A48E36F24CF0AA6F6BEFD6334B6C3DD1049B798D2703F7C85",
+    "pages": 325
+  },
+  {
+    "id": "7E19CF6D3417",
+    "filename": "Proverilog编码规范(草案).pdf",
+    "sha256": "7E19CF6D3417C16CD00316AA8E6A8E61DC1C8E4199BA2D692AF530296B7BC647",
+    "pages": 8
+  },
+  {
+    "id": "1A75759321EF",
+    "filename": "SystemVerilog测试验证平台(中文版).pdf",
+    "sha256": "1A75759321EF9CFE2925FC1A17ABDF083A8850EAA83F7701CDC4C007B38E7C92",
+    "pages": 387
+  },
+  {
+    "id": "45A35114E905",
+    "filename": "UVM实战（卷Ⅰ_wrapper.pdf",
+    "sha256": "45A35114E9056D873E0624FD45EF240F25E05062A7858A98C0AE99CD8D7A890C",
+    "pages": 837
+  }
+]

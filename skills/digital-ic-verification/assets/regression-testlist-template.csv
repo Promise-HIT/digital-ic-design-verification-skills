@@ -1,0 +1,2 @@
+test,config,seed_policy,timeout,tags,owner,expected_runtime
+smoke_test,default,fixed:1,5m,smoke;presubmit,unassigned,1m

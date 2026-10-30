@@ -1,0 +1,2 @@
+id,requirement,stimulus,checker,coverage,level,priority,status
+DV-001,替换为可测试的需求,替换为激励与边界,替换为独立判定机制,替换为功能覆盖目标,block,P0,planned

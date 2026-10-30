@@ -1,0 +1,4 @@
+interface:
+  display_name: "数字 IC 验证"
+  short_description: "构建可追踪 testplan、testbench、SVA 与覆盖闭环"
+  default_prompt: "Use $digital-ic-verification to create or implement a requirement-traceable verification plan for this design."

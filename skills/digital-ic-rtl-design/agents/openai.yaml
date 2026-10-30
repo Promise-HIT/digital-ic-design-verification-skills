@@ -1,0 +1,4 @@
+interface:
+  display_name: "数字 IC RTL 设计"
+  short_description: "完成数字 IC 规格澄清、微架构设计、RTL 实现与工具验证闭环"
+  default_prompt: "Use $digital-ic-rtl-design to implement this RTL change from the specification and validate it with the repository tools."

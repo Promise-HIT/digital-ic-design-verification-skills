@@ -1,0 +1,4 @@
+interface:
+  display_name: "数字 IC 评审与调试"
+  short_description: "基于源码、日志和工具证据定位数字 IC 设计、验证与签核问题"
+  default_prompt: "Use $digital-ic-review-debug to review or diagnose this RTL and verification issue, prioritizing evidence-backed findings."
