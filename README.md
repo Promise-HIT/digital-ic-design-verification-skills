@@ -2,6 +2,8 @@
 
 **DeepSeek Harness 用户**可以把三个 Skill 一起装进当前 profile。完整安装命令、模型选择和首次使用示例见 [DeepSeek Harness 插件指南](deepseek-harness/README.md)。原有 Codex 用户继续使用下方安装器。
 
+**安装者无需书籍 PDF。** 插件包已内置状态机编码、验证计划、scoreboard、覆盖反馈和 Synopsys 报告判读规则。书名和页码仅供想回查原理的读者使用。
+
 面向数字 IC 前端工程的中文 Agent Skills：从规格、微架构与 SystemVerilog RTL，到验证计划、UVM、SVA，再到评审、调试与交付证据。
 
 [English overview](README.en.md) · [使用示例](docs/EXAMPLES.md) · [贡献说明](CONTRIBUTING.md) · [MIT License](LICENSE)
