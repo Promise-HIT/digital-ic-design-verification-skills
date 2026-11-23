@@ -50,6 +50,8 @@ description: 数字 IC RTL 与验证评审、故障调试和签核缺口分析�
 
 ## 深入分诊
 
+- Synopsys 日志与报告先按[工具阶段和输入](../digital-ic-rtl-design/references/synopsys-flow.md)定位首个不满足预期的步骤。
+
 - 边界/背压、UVM 早退或 hang、对象别名、形式空证明等症状：[failure-patterns.md](references/failure-patterns.md)。
 - 书籍来源与版本限制：[local-library.md](references/local-library.md)。
 - UVM API 争议：优先核对配套验证 skill 的 [官方依据](../digital-ic-verification/references/official-uvm.md) 和工程实际库。

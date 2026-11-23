@@ -1,5 +1,7 @@
 # Digital IC Design & Verification Skills
 
+For DeepSeek Harness, install the [native plugin bundle](deepseek-harness/README.md) in the profile you use. It exposes all three skills to the selected provider model.
+
 A Chinese-first collection of three Agent Skills for digital IC frontend work: synthesizable RTL, verification planning and implementation, and evidence-based review and debugging.
 
 [中文说明](README.md) · [Examples](docs/EXAMPLES.md) · [MIT License](LICENSE)

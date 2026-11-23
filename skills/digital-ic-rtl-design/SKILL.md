@@ -9,6 +9,9 @@ description: 数字 IC RTL 设计与实现：把接口规格转化为微架构�
 
 ## 开发与模块入口
 
+- 编写 Verilog-2001 或 SystemVerilog RTL 时，先用[代码风格与时序示例](references/hdl-style.md)核对语言模式、命名与同拍优先级。
+- 运行或解释 VCS、Verdi、VC SpyGlass、DC、Formality、PrimeTime 时，查[项目输入与报告判据](references/synopsys-flow.md)。
+
 - 从规格到交付、选择当前阶段与裁剪门禁：[development-flow.md](references/development-flow.md)。
 - 计数器、FSM、FIFO、仲裁、流水、CSR/RAM、算术/CRC、协议适配：[common-modules.md](references/common-modules.md)。
 - 仿真/lint/CDC/综合/等价/STA 的使用思路和 Tcl/Python 流程：[eda-workflow.md](references/eda-workflow.md)。

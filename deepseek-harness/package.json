@@ -1,0 +1,41 @@
+{
+  "name": "dsh-digital-ic-skills",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness skills for Verilog, SystemVerilog RTL, UVM verification and Synopsys EDA workflows",
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "digital-ic",
+    "verilog",
+    "systemverilog",
+    "uvm",
+    "synopsys",
+    "glm"
+  ],
+  "type": "module",
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "curriculum",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=24.9.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Promise-HIT/digital-ic-design-verification-skills.git",
+    "directory": "deepseek-harness"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}

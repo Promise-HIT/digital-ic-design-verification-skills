@@ -38,6 +38,9 @@ description: 数字 IC 验证规划与实现：建立需求可追踪 testplan、
 
 ## 按需读取
 
+- 从覆盖缺口落实到激励、scoreboard 代码和注错自检：[FIFO 验证实例](references/coverage-feedback.md)。
+- VCS 回归与 Verdi 波形排查：[Synopsys 工具流程](../digital-ic-rtl-design/references/synopsys-flow.md)。
+
 - 创建 testplan 或确定完成标准：[references/verification-plan.md](references/verification-plan.md)
 - 搭建 procedural/UVM 环境或解决竞态：[references/testbench-architecture.md](references/testbench-architecture.md)
 - 编写 SVA、形式属性或 coverage model：[references/assertions-formal-coverage.md](references/assertions-formal-coverage.md)
