@@ -37,6 +37,10 @@ For a single project, pass that project's `.agents/skills` directory instead. Th
 
 See the [official skill documentation](https://learn.chatgpt.com/docs/build-skills) for Codex discovery and invocation.
 
+## Check installation
+
+In a new project session, type `$digital-ic-` in Codex or `/digital-ic-` in Claude Code to list the installed roles. In the web apps, check that the individual uploaded skill is enabled. For dsh, run `dsh --profile web --dump-config` with the profile used for installation, then request `digital-ic-amba` and inspect the skill invocation. A read-only APB timing question is enough to exercise the guide.
+
 ## Use
 
 ```text

@@ -59,6 +59,25 @@ python scripts/install.py --dest /path/to/your-project/.agents/skills
 
 安装器的默认目标格式为 Codex。各平台的安装位置详见上表。[Codex Skills 说明](https://learn.chatgpt.com/docs/build-skills)
 
+## 安装后自检
+
+先确认当前宿主能发现已安装的技能，再选一个技能发起只读任务。完整本地安装有五个名称：`digital-ic-rtl-design`、`digital-ic-verification`、`digital-ic-review-debug`、`digital-ic-amba`、`digital-ic-eda`。单独上传 ZIP 时，只需检查已上传的名称。
+
+| 使用位置 | 怎么查 | 成功时看到什么 |
+| --- | --- | --- |
+| Codex | 在安装作用域内打开新会话，输入 `$digital-ic-`，从技能选择器选择 `digital-ic-amba`。 | 出现已安装的技能名，所选技能附到请求中。项目安装时在该项目内操作。 |
+| Claude Code | 在项目中打开 Claude Code，输入 `/digital-ic-`，选择 `/digital-ic-amba`。 | 补全列出匹配的命令，可以按名称调用。 |
+| ChatGPT / Claude 网页版 | 在各自的 Skills 管理页按名称查找上传的 ZIP，确认已安装或启用。 | 可以看到该技能的名称和说明。在新对话中明确指定技能并查看宿主显示的使用记录。 |
+| dsh | 用安装时的 profile 运行 `dsh --profile web --dump-config`，再在同一 profile 的新会话中请求加载 `digital-ic-amba`。 | 配置含 `dsh-digital-ic-skills`，会话的技能调用返回 AMBA 课程正文。使用 headless 或 tui 时，把 web 换成对应名称。 |
+
+可用下面的请求检查技能正文。全程只读，无需 HDL 工程或 EDA 工具。
+
+> 使用 digital-ic-amba 的 APB 指南，说明带 PREADY 的从设备在哪个上升沿完成传输，再指出 PREADY 为低时应保持的两个写请求字段。
+
+预期能定位到 APB 指南，并说明 PSELx、PENABLE、PREADY 同时为高的上升沿完成传输。回答内容用于检查是否读对指南；技能选择器或调用记录用于确认宿主确实加载了它。
+
+找不到时，先核对实际安装目录、当前项目或 profile，以及目录层级是否为 `<skill-name>/SKILL.md`。网页上传请选择 Release 中单个技能的 ZIP；GitHub 的整仓源码 ZIP 用于从源码安装。
+
 ## 快速使用
 
 在支持 `$skill-name` 的 Codex 界面中可这样发起任务：
