@@ -16,7 +16,9 @@ def inspect(lines):
     for number, line in enumerate(lines, 1):
         if HEADER.match(line):
             headers += 1
-        elif headers and (match := COUNT.match(line)):
+            continue
+        match = COUNT.match(line)
+        if headers and match:
             kind, value = match.groups()
             repeated |= kind in counts
             counts[kind] = {"count": int(value), "line": number}

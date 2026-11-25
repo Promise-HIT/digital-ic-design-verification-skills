@@ -14,6 +14,4 @@
 
 **采信中的两个取舍**。本地 IHI 0022L 的修订史把 AXI4 等早期接口内容的移除定位在 J 版。AXI4-Lite 的判断使用覆盖该接口的 H 版。课程目录中的 VERDI 2.2 User Manual 第 1.1 节介绍环境建模数据的可视化，它与 VCS/FSDB 调试无关。旧技能所列 UVM 官方归档保留原有出处与版本记录。[Arm IHI 0022H](https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/IHI0022H_amba_axi_protocol_spec.pdf)
 
-**本版做过的 HDL 检查**。ModelSim SE-64 10.1c 编译了 [APB 保持断言](../skills/digital-ic-amba/references/apb.md)。正常 trace 含一次等待两拍的写和一次背靠背读，观测到两次完成、零次断言失败。仅在写完成拍改变 PWDATA 后，仍完成两次，保持断言失败一次。对课程 FIFO 在合法深度 4 下，从空态同时使能读写 8'h5A，下一拍单读，观察到 empty 仍为 1，读出 8'h00。此例针对课程文件中的读写接受条件。
-
-**EDA 脚本实测**。用 Vivado 2020.2 对一个四位寄存器示例综合并保存 DCP，在新进程中运行随包 Tcl。脚本识别到一个 10 ns 时钟并生成时序与资源报告；输入 DCP 缺失的独立测试返回退出码 1。这个用例验证脚本的报告与失败路径。综合检查点中的时序数据对应综合阶段。其他商业工具的签核流程由使用者的库、工艺、约束及许可证决定。[EDA 手册索引](../skills/digital-ic-eda/references/manuals.md)
+工具手册的产品、适用版次与厂商入口见 [EDA 手册索引](../skills/digital-ic-eda/references/manuals.md)。

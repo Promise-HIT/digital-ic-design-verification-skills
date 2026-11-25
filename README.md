@@ -1,18 +1,18 @@
 # Digital IC Design & Verification Skills
 
-面向数字 IC 前端工程的中文 Agent Skills：从规格、微架构与 SystemVerilog RTL，到验证计划、UVM、SVA，再到评审、调试与交付证据。
+面向数字 IC 设计、验证与实现的五个中文 Agent Skills，涵盖 RTL、AMBA 协议、验证开发、故障定位，以及从仿真到签核的 EDA 工具与脚本。
 
 [English overview](README.en.md) · [使用示例](docs/EXAMPLES.md) · [贡献说明](CONTRIBUTING.md) · [MIT License](LICENSE)
 
-## v1.1.0 安装入口
+## v1.1.1 安装入口
 
 | 平台 | 安装与调用 |
 | --- | --- |
 | ChatGPT / Codex | 网页版从发布页选择一个 `chatgpt-digital-ic-*.zip`，在 Plugins → Skills → Create 中上传。Codex 本机使用下方安装器，可用 `$digital-ic-amba` 等名称调用。 |
 | Claude / Claude Code | 网页版使用对应的 `claude-digital-ic-*.zip`。Claude Code 可安装到个人或项目的 `.claude/skills`，通过 `/digital-ic-amba` 等名称调用。详见 [Claude 安装说明](claude/README.md)。 |
-| DeepSeek Harness（dsh） | 一个原生插件注册全部五个角色，从当前 profile 加载。使用 [dsh 安装说明](deepseek-harness/README.md) 中的 v1.1.0 包。 |
+| DeepSeek Harness（dsh） | 一个原生插件注册全部五个角色，从当前 profile 加载。使用 [dsh 安装说明](deepseek-harness/README.md) 中的 v1.1.1 包。 |
 
-[下载 v1.1.0](https://github.com/Promise-HIT/digital-ic-design-verification-skills/releases/tag/v1.1.0) · [课程资料与实测记录](docs/COURSE-NOTES.md) · [ChatGPT Skills 官方说明](https://help.openai.com/en/articles/20001066-skills-in-chatgpt)
+[下载 v1.1.1](https://github.com/Promise-HIT/digital-ic-design-verification-skills/releases/tag/v1.1.1) · [课程资料来源](docs/COURSE-NOTES.md) · [ChatGPT Skills 官方说明](https://help.openai.com/en/articles/20001066-skills-in-chatgpt)
 
 ## 五个专业入口
 
@@ -104,7 +104,7 @@ skills/
   digital-ic-verification/     # SKILL.md、agents、references、scripts、assets
   digital-ic-review-debug/     # SKILL.md、agents、references、scripts
   digital-ic-amba/             # APB、AHB-Lite 和 AXI
-  digital-ic-eda/      # EDA 全流程、报告与脚本
+  digital-ic-eda/              # EDA 全流程、报告与脚本
 scripts/                      # 仓库校验与安装器
 tests/                        # 工具行为回归
 docs/                         # 使用示例与来源说明

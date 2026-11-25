@@ -18,4 +18,4 @@ UVM 版本与工具命令以使用者实际工程为准。官方文档与版本�
 
 安装和发现位置参考 [OpenAI 官方 Skill 文档](https://learn.chatgpt.com/docs/build-skills)。本仓库的本地检查和 CI 验证目录结构与 Python 工具行为，不验证外部来源内容、不证明芯片设计或验证环境正确。
 
-本版新增规范的资料范围、版次辨别和仿真观察见[课程资料核对记录](COURSE-NOTES.md)。
+本版新增规范的资料范围与版次辨别见[课程资料核对记录](COURSE-NOTES.md)。

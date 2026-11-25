@@ -18,7 +18,7 @@ Install all five as sibling directories: some references are shared through rela
 
 ## Install
 
-Download a `chatgpt-*.zip` or `claude-*.zip` for each desired skill from the [v1.1.0 release](https://github.com/Promise-HIT/digital-ic-design-verification-skills/releases/tag/v1.1.0). Each ZIP resolves its own references. For Claude Code use `python scripts/install.py --platform claude --dest "~/.claude/skills"`. [Claude installation](claude/README.md) · [Course sources and HDL checks](docs/COURSE-NOTES.md)
+Download a `chatgpt-*.zip` or `claude-*.zip` for each desired skill from the [v1.1.1 release](https://github.com/Promise-HIT/digital-ic-design-verification-skills/releases/tag/v1.1.1). Each ZIP resolves its own references. For Claude Code use `python scripts/install.py --platform claude --dest "~/.claude/skills"`. [Claude installation](claude/README.md) · [Course sources](docs/COURSE-NOTES.md)
 
 
 Clone this repository or download and extract its ZIP. From the repository root, with Python 3.10+:

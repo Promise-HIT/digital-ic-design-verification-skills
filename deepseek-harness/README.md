@@ -9,11 +9,11 @@
 通过 GitHub 上固定版本的发布包安装：
 
 ```sh
-dsh plugin --profile web add https://github.com/Promise-HIT/digital-ic-design-verification-skills/releases/download/v1.1.0/dsh-digital-ic-skills-1.1.0.tgz
+dsh plugin --profile web add https://github.com/Promise-HIT/digital-ic-design-verification-skills/releases/download/v1.1.1/dsh-digital-ic-skills-1.1.1.tgz
 dsh --profile web --dump-config
 ```
 
-在输出中查找 `digital-ic-skills` 插件行。重新启动该 profile，开一个新会话。本次 v1.1.0 的固定安装入口为上面的 GitHub 发布包。
+在输出中查找 `digital-ic-skills` 插件行。重新启动该 profile，开一个新会话。本次 v1.1.1 的固定安装入口为上面的 GitHub 发布包。
 
 ## 第一次使用
 

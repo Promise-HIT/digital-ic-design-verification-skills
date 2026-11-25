@@ -1,6 +1,6 @@
 {
   "name": "dsh-digital-ic-skills",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Digital IC RTL, verification, debug, AMBA protocol and EDA toolchain skills for DeepSeek Harness",
   "keywords": [
     "deepseek-harness",
