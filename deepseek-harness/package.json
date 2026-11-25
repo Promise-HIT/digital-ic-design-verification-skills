@@ -1,7 +1,7 @@
 {
   "name": "dsh-digital-ic-skills",
-  "version": "1.0.0",
-  "description": "DeepSeek Harness skills for Verilog, SystemVerilog RTL, UVM verification and Synopsys EDA workflows",
+  "version": "1.1.0",
+  "description": "Digital IC RTL, verification, debug, AMBA protocol and EDA toolchain skills for DeepSeek Harness",
   "keywords": [
     "deepseek-harness",
     "dsh-plugin",

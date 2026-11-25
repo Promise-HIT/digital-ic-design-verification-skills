@@ -5,7 +5,7 @@ import { dirname, sep } from 'node:path'
 export const name = 'digital-ic-skills'
 export const inject = ['skills']
 
-const names = ['digital-ic-rtl-design', 'digital-ic-verification', 'digital-ic-review-debug']
+const names = ['digital-ic-rtl-design', 'digital-ic-verification', 'digital-ic-review-debug', 'digital-ic-amba', 'digital-ic-eda']
 const root = new URL('./curriculum/', import.meta.url)
 
 // The repository uses single-line, plain YAML scalars for name and description.

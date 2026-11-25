@@ -1,0 +1,4 @@
+interface:
+  display_name: "AMBA 协议 RTL 与验证"
+  short_description: "按 AMBA 版次实现接口、分析握手，并验证等待与错误响应"
+  default_prompt: "使用 $digital-ic-amba，为这个 APB 从设备实现等待周期并验证每笔写只提交一次。"

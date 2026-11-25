@@ -9,19 +9,11 @@
 通过 GitHub 上固定版本的发布包安装：
 
 ```sh
-dsh plugin --profile web add https://github.com/Promise-HIT/digital-ic-design-verification-skills/releases/download/dsh-v1.0.0/dsh-digital-ic-skills-1.0.0.tgz
+dsh plugin --profile web add https://github.com/Promise-HIT/digital-ic-design-verification-skills/releases/download/v1.1.0/dsh-digital-ic-skills-1.1.0.tgz
 dsh --profile web --dump-config
 ```
 
-在输出中查找 `digital-ic-skills` 插件行。重新启动该 profile，开一个新会话。npm 公共注册表中对应的包名为 `dsh-digital-ic-skills`，可用以下命令查询发布状态并按名称安装：
-
-```sh
-npm search dsh-digital-ic-skills --registry=https://registry.npmjs.org
-npm view dsh-digital-ic-skills version --registry=https://registry.npmjs.org
-dsh plugin --profile web add dsh-digital-ic-skills
-```
-
-只需要将包下载到普通 Node 项目时，使用 `npm install dsh-digital-ic-skills`，也可把包名换成上面的完整 .tgz URL。Harness 的启用步骤是 `dsh plugin --profile … add …`。
+在输出中查找 `digital-ic-skills` 插件行。重新启动该 profile，开一个新会话。本次 v1.1.0 的固定安装入口为上面的 GitHub 发布包。
 
 ## 第一次使用
 
@@ -34,11 +26,13 @@ dsh plugin --profile web add dsh-digital-ic-skills
 | 写 RTL | 请加载 digital-ic-rtl-design。按工程的 Verilog-2001 风格实现带背压的单级缓存，说明 stall 时如何保持数据，运行最小自检查测试。 |
 | 写验证方案和代码 | 请加载 digital-ic-verification。为深度 3 的同步 FIFO 写需求表、独立队列 scoreboard 和满时同时读写的测试。固定 seed，证明故意改错一个有效数据位时 checker 会报错。 |
 | 查 Synopsys 报告 | 请加载 digital-ic-review-debug。分析附带的 VCS 日志，用最早失败的事务定位 Verdi 应查看的信号，并区分已证实的原因与待查项。 |
+| 写协议 RTL | 加载 digital-ic-amba，评审 APB 外设在两拍等待后的写提交，并检查写后背靠背读。 |
+| 编写 EDA 脚本 | 加载 digital-ic-eda，从已有 Vivado DCP 生成含未约束路径的时序报告，核对目标时钟和最差路径。 |
 
 模型响应中的技能调用及返回的正文可用于确认加载。在同一模型、同一 RTL 工程和同一测试集上对比启用前后的编译结果、边界用例通过数和 checker 注错检出率，可评估你的实际收益。仿真、综合和时序检查使用项目已有工具、许可和库。
 
 ## 从源码打包
 
-在本目录执行 `npm pack`。包内的 curriculum/ 含三个独立入口，每组专业规则都附书名和页码或章节，可直接审阅。把生成的 .tgz 的绝对路径传给 `dsh plugin --profile web add` 即可试用。原有 Codex 工具仍随仓库根目录的 skills/ 分发。
+在仓库根目录执行 `python scripts/package_skills.py --sync-dsh` 从公共规范生成五个原生课程入口，再进入 `deepseek-harness/` 执行 `npm pack`。将生成的 tgz 绝对路径交给当前 profile 的 plugin add 命令。包内带有协议、EDA 工具链、RTL 和验证编码规范及评审练习。
 
 [Harness 官方插件打包说明](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/develop/basic/publish.md) · [项目首页](https://github.com/Promise-HIT/digital-ic-design-verification-skills)

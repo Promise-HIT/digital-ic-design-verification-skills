@@ -4,12 +4,13 @@
 
 提交修改时说明触发场景、原有行为、修改后的行为，以及实际检查结果。技术规则应注明适用条件；工具选项与 UVM API 应匹配明确版本。请使用自己编写或已获得许可的材料，不提交公司工程、密钥、个人路径、整书转录或受限制的手册。
 
-三个 Skill 保持同级目录，共享参考通过相对链接访问。通用约束放在 `SKILL.md`，详细流程按需放进 `references/`，可复制模板放在 `assets/`。不要把某个项目的审批、编码风格或工具链强加给所有使用者。
+五个 Skill 保持同级目录，共享参考通过相对链接访问。通用约束放在 `SKILL.md`，详细流程按需放进 `references/`，可复制模板放在 `assets/`。不要把某个项目的审批、编码风格或工具链强加给所有使用者。
 
 在仓库根目录执行：
 
 ```bash
 python -m pip install -r requirements-dev.txt
+python scripts/package_skills.py --sync-dsh
 python scripts/validate_repo.py
 python -m unittest discover -s tests -v
 ```

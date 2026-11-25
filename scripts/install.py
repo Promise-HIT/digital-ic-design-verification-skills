@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Copy the three related skills into an explicitly selected directory."""
+"""Copy the digital IC skills into an explicitly selected directory."""
 
 from __future__ import annotations
 
@@ -11,11 +11,13 @@ SKILLS = (
     "digital-ic-rtl-design",
     "digital-ic-verification",
     "digital-ic-review-debug",
+    "digital-ic-amba",
+    "digital-ic-eda",
 )
 SOURCE = Path(__file__).resolve().parents[1] / "skills"
 
 
-def install(destination: Path) -> list[Path]:
+def install(destination: Path, platform: str = "codex") -> list[Path]:
     destination = destination.expanduser().resolve()
     if destination == SOURCE or SOURCE in destination.parents:
         raise ValueError("destination must be outside the source skills directory")
@@ -25,18 +27,22 @@ def install(destination: Path) -> list[Path]:
             raise ValueError(f"source skill is incomplete: {name}")
         if target.exists() or target.is_symlink():
             raise FileExistsError(f"refusing to overwrite existing destination: {target}")
+    ignored = ["__pycache__", "*.pyc"]
+    if platform == "claude":
+        ignored.append("agents")  # OpenAI-specific UI metadata.
     destination.mkdir(parents=True, exist_ok=True)
     for name, target in zip(SKILLS, targets):
-        shutil.copytree(SOURCE / name, target, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
+        shutil.copytree(SOURCE / name, target, ignore=shutil.ignore_patterns(*ignored))
     return targets
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--dest", type=Path, required=True, help="explicit parent directory for all three skills")
+    parser.add_argument("--dest", type=Path, required=True, help="explicit parent directory for all skills")
+    parser.add_argument("--platform", choices=("codex", "claude"), default="codex")
     args = parser.parse_args()
     try:
-        for target in install(args.dest):
+        for target in install(args.dest, args.platform):
             print(f"Installed: {target}")
     except (OSError, ValueError) as exc:
         parser.exit(1, f"Installation failed: {exc}\n")

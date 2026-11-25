@@ -47,6 +47,10 @@ description: 数字 IC RTL 设计与实现：把接口规格转化为微架构�
 
 ## 按需读取
 
+- [RTL 改动、FIFO、CDC 与低功耗的编码检查](references/agent-rtl.md)
+- [FSM 编码与逐拍练习](references/fsm-worked-example.md)
+- 总线桥或专用接口可使用 digital-ic-amba，工具使用、日志与脚本可使用 digital-ic-eda。
+
 - 新模块、微架构或完成门禁：[references/rtl-workflow.md](references/rtl-workflow.md)
 - FSM/FIFO/握手/仲裁/参数化：[references/coding-and-microarchitecture.md](references/coding-and-microarchitecture.md)
 - 出现多个时钟、异步输入或局部复位：[references/clock-reset-cdc.md](references/clock-reset-cdc.md)
@@ -71,6 +75,8 @@ description: 数字 IC RTL 设计与实现：把接口规格转化为微架构�
 - 需要保存多条项目检查证据：[check-execution.md](references/check-execution.md)，使用 `scripts/run_hdl_checks.py`。已有 runner 能满足时沿用项目入口。
 
 规格、仓库事实、书籍建议与实际工具证据分别标识；用提炼后的流程和判据辅助实现，书中示例仍需验证。
+
+文中的 `scripts/`、`assets/` 和 `references/` 均相对本技能的安装目录。运行脚本时使用其实际路径，将目标 HDL 工程或计划文件作为参数传入。
 
 ## 完成输出
 

@@ -9,7 +9,7 @@
 |[Accellera 下载页](https://www.accellera.org/downloads/standards/uvm)|核对可用版本；原包记录了 2020-3.2 参考实现，不能据此替项目升级|
 |[UVM 1.2 User’s Guide](https://www.accellera.org/images/downloads/standards/uvm/uvm_users_guide_1.2.pdf)|2015-10-08；1.2 架构与方法学。§2.3.3 analysis、§3.5 driver/sequencer、§3.6 monitor、§3.11 结束、§4.4 config、§5.4 virtual sequence、§5.9 register layer|
 |[UVM 1.2 Class Reference](https://www.accellera.org/images/downloads/standards/uvm/UVM_Class_Reference_Manual_1.2.pdf)|2014-06；核对 1.2 的类/方法契约。按方法名检索：`copy/clone/do_copy`、`uvm_config_db`、`uvm_objection`、`uvm_sequence_base`、`uvm_sqr_if_base`、`uvm_reg_map`|
-|[2020-3.2 官方实现压缩包](https://www.accellera.org/images/downloads/standards/uvm/1800.2-2020.3.2%20Release.gz)|原包记录的 1800.2-2020 系列实现；归档 SHA256 见本目录 `official-source-lock.json`|
+|[2020-3.2 官方实现压缩包](https://www.accellera.org/images/downloads/standards/uvm/1800.2-2020.3.2%20Release.gz)|原包记录的 1800.2-2020 系列实现；归档 SHA256 见本目录的[归档记录](official-source-lock.json)|
 |[Accellera 官方 uvm-core](https://github.com/accellera-official/uvm-core)|分支内容会变化；使用时核对并固定 tag/commit，区分仓库版本与官网压缩包版本|
 |[官方实现偏差说明](https://github.com/accellera-official/uvm-core/blob/main/DEVIATIONS.md)|实现和 IEEE 标准可能存在偏差；阅读匹配发布包内的同名文件|
 

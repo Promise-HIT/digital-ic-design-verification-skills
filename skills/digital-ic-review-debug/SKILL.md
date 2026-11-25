@@ -44,6 +44,9 @@ description: 数字 IC RTL 与验证评审、故障调试和签核缺口分析�
 
 ## 按需读取
 
+- [从最小波形判别协议、FIFO 和 checker 故障](references/course-triage.md)
+- [工具报告定位练习](references/report-worked-example.md)
+
 - 系统性代码/diff 审查：[references/review-matrix.md](references/review-matrix.md)
 - 仿真、断言、scoreboard 或 timeout 分诊：[references/failure-triage.md](references/failure-triage.md)
 - tapeout/milestone 或完整 closure 评估：[references/signoff-checklist.md](references/signoff-checklist.md)
@@ -57,6 +60,8 @@ description: 数字 IC RTL 与验证评审、故障调试和签核缺口分析�
 - UVM API 争议：优先核对配套验证 skill 的 [官方依据](../digital-ic-verification/references/official-uvm.md) 和工程实际库。
 
 引用源码、书中案例或工具警告时，仍需建立“合法触发 → 错误机制 → 可观察影响”的证据链。未证明的怀疑不写成已确认 bug；缺少仿真/CDC/STA 证据时明确范围。
+
+文中的 `scripts/`、`assets/` 和 `references/` 均相对本技能的安装目录。运行脚本时使用其实际路径，将目标 HDL 工程或计划文件作为参数传入。
 
 ## 完成输出
 

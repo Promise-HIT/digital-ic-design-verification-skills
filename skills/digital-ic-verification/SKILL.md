@@ -38,6 +38,9 @@ description: 数字 IC 验证规划与实现：建立需求可追踪 testplan、
 
 ## 按需读取
 
+- [自检查 bench、采样与 checker 自检](references/agent-testbench.md)
+- [事务与验证代码练习](references/bench-worked-example.md)
+
 - 从覆盖缺口落实到激励、scoreboard 代码和注错自检：[FIFO 验证实例](references/coverage-feedback.md)。
 - VCS 回归与 Verdi 波形排查：[Synopsys 工具流程](../digital-ic-rtl-design/references/synopsys-flow.md)。
 
@@ -64,6 +67,8 @@ description: 数字 IC 验证规划与实现：建立需求可追踪 testplan、
 `scripts/check_verification_plan.py plan.csv --closure` 在关闭验证计划时要求证据文件、配置、工具版本、checker 自检及覆盖命中，或完整 waiver 元数据。它仅校验可追踪性和字段，不验证日志真伪或证明 RTL 正确。
 
 关闭证据字段见 [verification-closure-template.csv](assets/verification-closure-template.csv)，只在需要正式 closure 时使用。
+
+文中的 `scripts/`、`assets/` 和 `references/` 均相对本技能的安装目录。运行脚本时使用其实际路径，将目标 HDL 工程或计划文件作为参数传入。
 
 ## 完成输出
 

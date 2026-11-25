@@ -1,8 +1,8 @@
 # Digital IC Design & Verification Skills
 
-For DeepSeek Harness, install the [native plugin bundle](deepseek-harness/README.md) in the profile you use. It exposes all three skills to the selected provider model.
+For DeepSeek Harness, install the [native plugin bundle](deepseek-harness/README.md) in the profile you use. It exposes all five skills to the selected provider model.
 
-A Chinese-first collection of three Agent Skills for digital IC frontend work: synthesizable RTL, verification planning and implementation, and evidence-based review and debugging.
+A Chinese-first collection of five Agent Skills for digital IC frontend work: synthesizable RTL, verification planning and implementation, and evidence-based review and debugging.
 
 [中文说明](README.md) · [Examples](docs/EXAMPLES.md) · [MIT License](LICENSE)
 
@@ -11,10 +11,15 @@ A Chinese-first collection of three Agent Skills for digital IC frontend work: s
 | [digital-ic-rtl-design](skills/digital-ic-rtl-design/SKILL.md) | Interface contracts, microarchitecture, SystemVerilog, FIFO/FSM/handshakes, reset, CDC/RDC and EDA workflows |
 | [digital-ic-verification](skills/digital-ic-verification/SKILL.md) | Requirement-traceable plans, independent checkers, UVM, SVA, coverage and regression closure |
 | [digital-ic-review-debug](skills/digital-ic-review-debug/SKILL.md) | Evidence-backed findings, causal triage, reproducible failures and signoff gaps |
+| [digital-ic-amba](skills/digital-ic-amba/SKILL.md) | Versioned APB, AHB-Lite and AXI RTL, monitors and boundary checks |
+| [digital-ic-eda](skills/digital-ic-eda/SKILL.md) | Tool flows from RTL to signoff, report interpretation and reproducible Tcl/Python automation |
 
-Install all three as sibling directories: some references are shared through relative links. Instructions and references are primarily Chinese; this page is an English overview.
+Install all five as sibling directories: some references are shared through relative links. Instructions and references are primarily Chinese; this page is an English overview.
 
 ## Install
+
+Download a `chatgpt-*.zip` or `claude-*.zip` for each desired skill from the [v1.1.0 release](https://github.com/Promise-HIT/digital-ic-design-verification-skills/releases/tag/v1.1.0). Each ZIP resolves its own references. For Claude Code use `python scripts/install.py --platform claude --dest "~/.claude/skills"`. [Claude installation](claude/README.md) · [Course sources and HDL checks](docs/COURSE-NOTES.md)
+
 
 Clone this repository or download and extract its ZIP. From the repository root, with Python 3.10+:
 
@@ -28,9 +33,9 @@ python scripts/install.py --dest "$env:USERPROFILE/.agents/skills"
 python3 scripts/install.py --dest "$HOME/.agents/skills"
 ```
 
-For a single project, pass that project's `.agents/skills` directory instead. The installer copies all three skills and refuses existing destinations. It does not change agent configuration or install EDA tools.
+For a single project, pass that project's `.agents/skills` directory instead. The installer copies all five skills and refuses existing destinations. It does not change agent configuration or install EDA tools.
 
-See the [official skill documentation](https://learn.chatgpt.com/docs/build-skills) for Codex discovery and invocation. Other agents may use different installation locations; compatibility has not been tested individually.
+See the [official skill documentation](https://learn.chatgpt.com/docs/build-skills) for Codex discovery and invocation.
 
 ## Use
 
@@ -40,7 +45,7 @@ Inspect the project build first, state reset and simultaneous-transfer semantics
 and report the checks that actually ran.
 ```
 
-Use `$digital-ic-verification` for test plans and testbenches, and `$digital-ic-review-debug` for reviews or failure diagnosis. [Examples](docs/EXAMPLES.md) include the four bundled Python utilities.
+Use `$digital-ic-verification` for test plans and testbenches, and `$digital-ic-review-debug` for reviews or failure diagnosis. [Examples](docs/EXAMPLES.md) include the bundled Python utilities.
 
 The utilities use the Python standard library. Real lint, simulation, formal, synthesis and STA need the project's tools, licenses, libraries and constraints. A process returning zero or a metadata check passing is not proof of design correctness.
 

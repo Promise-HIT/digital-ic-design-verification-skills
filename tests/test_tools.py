@@ -199,7 +199,7 @@ class PlanTests(TemporaryCase):
 class InstallerTests(TemporaryCase):
     def test_installs_all_siblings_and_shared_references(self):
         targets = installer.install(self.root / "installed")
-        self.assertEqual(len(targets), 3)
+        self.assertEqual(len(targets), 5)
         for target in targets:
             self.assertTrue((target / "SKILL.md").is_file())
         reference = self.root / "installed/digital-ic-verification/../digital-ic-rtl-design/references/development-flow.md"

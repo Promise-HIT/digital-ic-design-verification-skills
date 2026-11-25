@@ -81,3 +81,11 @@ python skills/digital-ic-rtl-design/scripts/run_hdl_checks.py /path/to/checks.js
 `make smoke` 仅作结构示例，不能假设工程支持。Windows 需要选择真实可用的可执行文件；脚本使用参数数组而不自动解释 shell 表达式。输出目录必须尚不存在，必需检查失败后后续项标记 `not_run`。
 
 runner 保存进程结果，不能判断所有 UVM/断言/coverage 条件。形成工程结论前仍需核实检查器有效性、比较次数、工具版本、日志及配置。
+
+## 从 EDA 日志到报告
+
+向 digital-ic-eda 提供工具版本、执行命令、生成报告的阶段，以及原始日志。例：“这个实现后 timing summary 的 WNS 是正值，但报告存在未约束端点。请定位受影响的时钟域，检查 XDC 对象匹配并生成可复跑的 Tcl 报告脚本。” 可直接使用[检查点报告模板](../skills/digital-ic-eda/assets/vivado-checkpoint-reports.tcl)。
+
+## 协议 RTL
+
+例：“使用 digital-ic-amba 编写带等待的 APB4 寄存器接口，四路字节写使能，非法地址报错且寄存器保持。验证连续两次写同一地址时的提交次数，并对等待到完成之间的数据稳定性做一次负测。”

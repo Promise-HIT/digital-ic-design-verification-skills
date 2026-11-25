@@ -1,0 +1,4 @@
+interface:
+  display_name: "数字 IC EDA 工具与自动化"
+  short_description: "运行数字 IC 工具、读取各阶段报告，并编写可复现的工程流程脚本"
+  default_prompt: "使用 $digital-ic-eda，从工程入口定位本次失败的阶段，核对报告并修复相应的流程脚本。"

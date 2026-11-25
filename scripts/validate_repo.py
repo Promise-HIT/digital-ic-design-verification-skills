@@ -12,7 +12,7 @@ from urllib.parse import unquote, urlsplit
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED = {"digital-ic-rtl-design", "digital-ic-verification", "digital-ic-review-debug"}
+EXPECTED = {"digital-ic-rtl-design", "digital-ic-verification", "digital-ic-review-debug", "digital-ic-amba", "digital-ic-eda"}
 LINK = re.compile(r"!?\[[^\]\n]*\]\(([^)\n]+)\)")
 
 
@@ -22,7 +22,7 @@ def validate(root: Path = ROOT) -> tuple[list[str], dict[str, int]]:
     counts = {"skills": 0, "local_links": 0, "python_files": 0, "json_files": 0}
     skills = {path.name for path in (root / "skills").iterdir() if path.is_dir()}
     if skills != EXPECTED:
-        errors.append(f"expected three skill directories, found {sorted(skills)}")
+        errors.append(f"expected five skill directories, found {sorted(skills)}")
     for name in sorted(EXPECTED):
         entry = root / "skills" / name / "SKILL.md"
         try:
